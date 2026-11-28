@@ -1,2 +1,2 @@
-# Minhas Atividades
+Finalizado, apliquei todos os arquivos e commits depois das correções...
 
