@@ -7,8 +7,8 @@ public class Ex12 {
         System.out.print("Informe uma palavra: ");
         String palavra = input.nextLine().trim();
 
-        if (palavra.isEmpty()) {
-            System.out.println("A palavra não pode estar vazia.");
+        if (palavra.length() < 2) {
+            System.out.println("Informe uma palavra com pelo menos duas letras.");
         } else {
             System.out.println("Caractere escolhido: " + obterCaractere(palavra));
         }
@@ -17,7 +17,6 @@ public class Ex12 {
     }
 
     public static char obterCaractere(String palavra) {
-        int posicao = palavra.length() % 2 == 0 ? 0 : palavra.length() / 2;
-        return palavra.charAt(posicao);
+        return palavra.length() % 2 == 0 ? palavra.charAt(0) : palavra.charAt(1);
     }
 }
